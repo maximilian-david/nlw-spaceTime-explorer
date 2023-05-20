@@ -89,3 +89,48 @@ aside span {
   font-size: 12px;
   color: #9e9ea0;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    grid-template-areas: "profile" "timeline";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  nav {
+    padding: 32px;
+    overflow-y: initial;
+  }
+
+  .memory img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 16px;
+  }
+
+  .memory h1 {
+    font-size: 24px;
+  }
+
+  .memory p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  aside img:nth-child(2) {
+    width: 120px;
+    height: 120px;
+  }
+
+  aside p {
+    font-size: 24px;
+  }
+
+  aside span {
+    font-size: 10px;
+  }
+}
